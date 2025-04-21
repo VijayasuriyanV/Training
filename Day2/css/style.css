@@ -1,62 +1,81 @@
+/* Centering the entire layout on the screen */
 body {
-  background-color: #e6f7e3; /* still calm and clean */
+  background-color: #e6f7e3; /* Light green background */
   font-family: Arial, sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 100vh; /* Full height of viewport */
   margin: 0;
 }
 
-.login-container {
-  background-color: #e0f7fa; /* brighter and softer cyan */
+/* Container holding both login and image side-by-side */
+.main-wrapper {
+  display: flex;
+  gap: 40px; /* Space between login and image */
+  align-items: center;
+  background-color: #ffffff;
   padding: 30px;
-  border-radius: 16px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12); /* deeper shadow for polish */
-  width: 320px;
-  transition: transform 0.2s ease;
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12); /* Soft shadow */
 }
 
+/* Login form container */
+.login-container {
+  background-color: #e0f7fa; /* Light blue background */
+  padding: 30px;
+  border-radius: 16px;
+  width: 320px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08); /* Inner shadow */
+  transition: transform 0.2s ease; /* Smooth lift effect */
+}
+
+/* Slight lift on hover */
 .login-container:hover {
   transform: translateY(-2px);
 }
 
+/* Login heading styling */
 .login-container h2 {
   text-align: center;
-  color: #1e1e1e; /* deeper gray for better contrast */
+  color: #1e1e1e;
   margin-bottom: 20px;
   font-weight: 600;
 }
 
+/* Label styling */
 label {
   display: block;
   margin-bottom: 6px;
-  color: #2c3e50; /* slightly cooler dark shade */
+  color: #2c3e50;
   font-size: 14px;
   font-weight: 500;
 }
 
+/* Input fields (username & password) */
 input {
   width: 100%;
   padding: 10px;
   margin-bottom: 15px;
-  border: 1px solid #b0bec5; /* softer cool gray */
+  border: 1px solid #b0bec5;
   border-radius: 8px;
   font-size: 14px;
   box-sizing: border-box;
   transition: border-color 0.3s, box-shadow 0.3s;
 }
 
+/* Input focus effect */
 input:focus {
   border-color: #64b5f6;
   box-shadow: 0 0 4px #64b5f6;
   outline: none;
 }
 
+/* Login button styling */
 button {
   width: 100%;
   padding: 10px;
-  background: linear-gradient(to right, #2196f3, #1e88e5); /* smooth gradient */
+  background: linear-gradient(to right, #2196f3, #1e88e5); /* Blue gradient */
   color: white;
   border: none;
   border-radius: 8px;
@@ -66,14 +85,28 @@ button {
   transition: background 0.3s ease, transform 0.2s ease;
 }
 
+/* Hover effect on login button */
 button:hover {
   background: #1565c0;
   transform: scale(1.01);
 }
 
+/* Message box below the button */
 .message {
   margin-top: 10px;
   text-align: center;
   font-size: 14px;
   color: #555;
+}
+
+/* Container for the image next to login */
+.image-container {
+  max-width: 300px;
+}
+
+/* Styling for the image */
+.login-image {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
 }
