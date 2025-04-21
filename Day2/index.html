@@ -7,40 +7,26 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <!-- <div class="container">
-      <div class="container_div">
-        <h1>Login Form</h1>
-        <form action="#">
-          <label for="email">Email:</label><br />
-          <input type="text" name="email" id="email" value="" /><br />
-          <label for="password">Password:</label><br />
-          <input type="password" name="password" id="password" value="" /><br /><br />
-          <button>Submit</button>
+    <div class="main-wrapper">
+      <div class="login-container">
+        <h2>Login</h2>
+        <form id="loginForm">
+          <label for="username">Username</label>
+          <input type="text" id="username" required />
+
+          <label for="password">Password</label>
+          <input type="password" id="password" required />
+
+          <button type="submit">Login</button>
+          <div class="message" id="messageBox"></div>
         </form>
       </div>
-    </div> -->
 
-    <div class="login-container">
-      <h2>Login</h2>
-      <form id="loginForm">
-        <label for="username">Username</label>
-        <input type="text" id="username" required />
-
-        <label for="password">Password</label>
-        <input type="password" id="password" required />
-
-        <button type="submit">Login</button>
-        <div class="message" id="messageBox"></div>
-      </form>
+      <div class="image-container">
+        <img src="assets/login.jpg" alt="Login Illustration" class="login-image" />
+      </div>
     </div>
-  </body>
-  <script src="js/script.js"></script>
-</html>
 
-<!-- Styling login page
-background color
-color
-label, input, button tags
-border, border radius
-font size. font weight
-padding, margin -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
