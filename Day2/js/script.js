@@ -4,7 +4,6 @@ const messageBox = document.getElementById("messageBox");
 
 // Add an event listener to handle the form submission
 loginForm.addEventListener("submit", function (e) {
-  // Prevent the default form submission behavior
   e.preventDefault();
 
   // Get the trimmed values of the username and password input fields
@@ -21,4 +20,12 @@ loginForm.addEventListener("submit", function (e) {
     messageBox.style.color = "red";
     messageBox.textContent = "Invalid credentials!";
   }
+});
+
+// Show/hide password toggle
+const showPassword = document.getElementById("showPassword");
+const passwordInput = document.getElementById("password");
+
+showPassword.addEventListener("change", function () {
+  passwordInput.type = this.checked ? "text" : "password";
 });

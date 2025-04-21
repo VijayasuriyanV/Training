@@ -110,3 +110,51 @@ button:hover {
   height: auto;
   border-radius: 12px;
 }
+
+.extra-links {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 13px;
+}
+
+.extra-links a {
+  color: #1565c0;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+.extra-links a:hover {
+  text-decoration: underline;
+}
+
+/* Wrap checkbox and label together */
+.checkbox-wrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  font-size: 14px;
+  color: #2c3e50;
+}
+
+/* Better spacing between checkbox and label */
+.checkbox-wrapper input[type="checkbox"] {
+  accent-color: #2196f3; /* Modern blue */
+  width: 18px;
+  height: 18px;
+  margin-right: 8px;
+  cursor: pointer;
+}
+
+/* Label next to checkbox */
+.checkbox-wrapper label {
+  font-size: 13px;
+  color: #2c3e50;
+  cursor: pointer;
+}
+
+.demo-credentials {
+  font-size: 14px;
+  color: #2e7d32;
+  margin-top: 10px;
+  text-align: center;
+}
