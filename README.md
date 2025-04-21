@@ -15,7 +15,7 @@ This is a simple web page built using **HTML** and **CSS** to demonstrate variou
 
 ### 🌐 Live Preview
 
-👉 [Click here to view the project](https://vijayasuriyanv.github.io/Training/)
+👉 [Click here to view the project](https://vijayasuriyanv.github.io/Training/Day1)
 
 ### 📋 Features Demonstrated
 
@@ -34,6 +34,10 @@ This is a simple web page built using **HTML** and **CSS** to demonstrate variou
 ## Day 2 - Login Form
 
 A visually appealing login page built with **HTML**, **CSS**, and **JavaScript**. The layout includes a login form and an image side-by-side with client-side login validation and a password toggle feature.
+
+### 🌐 Live Preview
+
+👉 [Click here to view the project](https://vijayasuriyanv.github.io/Training/Day2)
 
 ### 📁 Folder Structure
 
