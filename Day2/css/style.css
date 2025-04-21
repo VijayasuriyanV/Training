@@ -1,36 +1,41 @@
+/* Centering the entire layout on the screen */
 body {
-  background-color: #e6f7e3;
+  background-color: #e6f7e3; /* Light green background */
   font-family: Arial, sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 100vh; /* Full height of viewport */
   margin: 0;
 }
 
+/* Container holding both login and image side-by-side */
 .main-wrapper {
   display: flex;
-  gap: 40px;
+  gap: 40px; /* Space between login and image */
   align-items: center;
   background-color: #ffffff;
   padding: 30px;
   border-radius: 20px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12); /* Soft shadow */
 }
 
+/* Login form container */
 .login-container {
-  background-color: #e0f7fa;
+  background-color: #e0f7fa; /* Light blue background */
   padding: 30px;
   border-radius: 16px;
   width: 320px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
-  transition: transform 0.2s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08); /* Inner shadow */
+  transition: transform 0.2s ease; /* Smooth lift effect */
 }
 
+/* Slight lift on hover */
 .login-container:hover {
   transform: translateY(-2px);
 }
 
+/* Login heading styling */
 .login-container h2 {
   text-align: center;
   color: #1e1e1e;
@@ -38,6 +43,7 @@ body {
   font-weight: 600;
 }
 
+/* Label styling */
 label {
   display: block;
   margin-bottom: 6px;
@@ -46,6 +52,7 @@ label {
   font-weight: 500;
 }
 
+/* Input fields (username & password) */
 input {
   width: 100%;
   padding: 10px;
@@ -57,16 +64,18 @@ input {
   transition: border-color 0.3s, box-shadow 0.3s;
 }
 
+/* Input focus effect */
 input:focus {
   border-color: #64b5f6;
   box-shadow: 0 0 4px #64b5f6;
   outline: none;
 }
 
+/* Login button styling */
 button {
   width: 100%;
   padding: 10px;
-  background: linear-gradient(to right, #2196f3, #1e88e5);
+  background: linear-gradient(to right, #2196f3, #1e88e5); /* Blue gradient */
   color: white;
   border: none;
   border-radius: 8px;
@@ -76,11 +85,13 @@ button {
   transition: background 0.3s ease, transform 0.2s ease;
 }
 
+/* Hover effect on login button */
 button:hover {
   background: #1565c0;
   transform: scale(1.01);
 }
 
+/* Message box below the button */
 .message {
   margin-top: 10px;
   text-align: center;
@@ -88,10 +99,12 @@ button:hover {
   color: #555;
 }
 
+/* Container for the image next to login */
 .image-container {
   max-width: 300px;
 }
 
+/* Styling for the image */
 .login-image {
   width: 100%;
   height: auto;
