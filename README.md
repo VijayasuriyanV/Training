@@ -37,11 +37,12 @@ A visually appealing login page built with **HTML**, **CSS**, and **JavaScript**
 
 ### 📁 Folder Structure
 
-├──Day2/
-  ├── assets/ 
-      │ └── login.jpg 
-  ├── css/ 
-      │ └── style.css 
-  ├── js/ 
-      │ └── script.js 
-  └── index.html
+```text
+Day2/
+├── assets/
+│   └── login.jpg
+├── css/
+│   └── style.css
+├── js/
+│   └── script.js
+└── index.html
