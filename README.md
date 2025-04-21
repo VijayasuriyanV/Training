@@ -1,14 +1,23 @@
-# HTML Tags Demo
+# 🚀 Web Training Projects
 
-This is a simple web page built using **HTML** and **CSS** to demonstrate various commonly used HTML elements and their attributes.
+Welcome to my HTML & CSS Training Projects! This repository showcases my progress as I build different projects each day.
 
-## 🚀 Live Preview
+## 📅 Contents
 
-👉 [Click here to view the project](https://vijayasuriyanv.github.io/Training/)
+- [Day 1 - HTML Tags Demo](#day-1---html-tags-demo)
+- [Day 2 - Login Form](#day-2---login-form)
 
 ---
 
-## 📋 Features Demonstrated
+## Day 1 - HTML Tags Demo
+
+This is a simple web page built using **HTML** and **CSS** to demonstrate various commonly used HTML elements and their attributes.
+
+### 🌐 Live Preview
+
+👉 [Click here to view the project](https://vijayasuriyanv.github.io/Training/)
+
+### 📋 Features Demonstrated
 
 - ✅ Anchor Tags with attributes (`href`, `target`, `title`)
 - ✅ Button with `onclick` JavaScript alert
@@ -20,3 +29,19 @@ This is a simple web page built using **HTML** and **CSS** to demonstrate variou
 - ✅ Paragraphs and inline elements like `<i>`
 - ✅ Responsive layout with basic CSS styles
 
+---
+
+## Day 2 - Login Form
+
+A visually appealing login page built with **HTML**, **CSS**, and **JavaScript**. The layout includes a login form and an image side-by-side with client-side login validation and a password toggle feature.
+
+### 📁 Folder Structure
+
+├──Day2/
+  ├── assets/ 
+      │ └── login.jpg 
+  ├── css/ 
+      │ └── style.css 
+  ├── js/ 
+      │ └── script.js 
+  └── index.html
