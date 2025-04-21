@@ -1,0 +1,79 @@
+body {
+  background-color: #e6f7e3; /* still calm and clean */
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.login-container {
+  background-color: #e0f7fa; /* brighter and softer cyan */
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12); /* deeper shadow for polish */
+  width: 320px;
+  transition: transform 0.2s ease;
+}
+
+.login-container:hover {
+  transform: translateY(-2px);
+}
+
+.login-container h2 {
+  text-align: center;
+  color: #1e1e1e; /* deeper gray for better contrast */
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  color: #2c3e50; /* slightly cooler dark shade */
+  font-size: 14px;
+  font-weight: 500;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #b0bec5; /* softer cool gray */
+  border-radius: 8px;
+  font-size: 14px;
+  box-sizing: border-box;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input:focus {
+  border-color: #64b5f6;
+  box-shadow: 0 0 4px #64b5f6;
+  outline: none;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background: linear-gradient(to right, #2196f3, #1e88e5); /* smooth gradient */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background: #1565c0;
+  transform: scale(1.01);
+}
+
+.message {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 14px;
+  color: #555;
+}
