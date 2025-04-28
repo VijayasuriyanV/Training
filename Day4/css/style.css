@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  font-size: 10px;
+}
+html,
+body {
+  height: 100%;
+}
+.container > div,
+.bottom > .left,
+.bottom > .right {
+  border: 3px solid #dddddd; /* Only apply to main layout */
+}
+
+/* Remove top border for bottom sections */
+.bottom > .left,
+.bottom > .right {
+  border-top: none;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  /* gap: 10px; */
+  height: 100%;
+}
+.top {
+  height: 24%;
+}
+.middle {
+  background: white;
+  height: 26%;
+  .box {
+    margin: 5px;
+  }
+}
+.bottom {
+  background: #85bef1;
+  height: 50%;
+  display: flex;
+
+  .left {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+  }
+  .right {
+    display: flex;
+    flex: 2;
+    flex-direction: column;
+
+    .top {
+      display: flex;
+      background-color: #ffe4c4;
+      flex: 1;
+      margin: 5px;
+      align-items: center;
+      padding: 5px;
+    }
+    /* .bottom {
+      background-color: blueviolet;
+      flex: 1;
+      margin: 8px;
+    } */
+    .down {
+      margin: 5px;
+    }
+  }
+}
+
+/* Kutty box */
+
+.box {
+  width: 50px;
+  height: 50px;
+  background: #95c1ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border-radius: 5px; */
+  margin: 2px;
+}
+
+.top_row0 {
+  display: flex;
+  justify-content: start;
+}
+.top_row1 {
+  display: flex;
+  justify-content: center;
+}
+.top_row2 {
+  display: flex;
+  justify-content: end;
+}
+.mid_row0 {
+  display: flex;
+  justify-content: space-between;
+}
+.mid_row1 {
+  display: flex;
+  justify-content: space-around;
+}
+.mid_row2 {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.down {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
