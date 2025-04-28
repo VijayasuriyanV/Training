@@ -1,55 +1,71 @@
+/* Global */
 * {
   margin: 0;
   font-size: 10px;
 }
+
 html,
 body {
   height: 100%;
 }
+
+/* Borders */
 .container > div,
 .bottom > .left,
 .bottom > .right {
-  border: 3px solid #dddddd; /* Only apply to main layout */
+  border: 3px solid #dddddd;
 }
 
-/* Remove top border for bottom sections */
+/* Border adjustments */
 .bottom > .left,
 .bottom > .right {
   border-top: none;
 }
 
+/* Container */
 .container {
   display: flex;
   flex-direction: column;
-  /* gap: 10px; */
   height: 100%;
+  /* gap: 10px; */
 }
+
+/* Top Section */
 .top {
   height: 24%;
 }
+
+/* Middle Section */
 .middle {
   background: white;
   height: 26%;
+
   .box {
     margin: 5px;
   }
 }
+
+/* Bottom Section */
 .bottom {
   background: #85bef1;
   height: 50%;
   display: flex;
 
+  /* Left Part */
   .left {
     display: flex;
     flex: 1;
     justify-content: center;
     align-items: center;
   }
+
+  /* Right Part */
   .right {
     display: flex;
     flex: 2;
     flex-direction: column;
 
+    /* Top Inside Right */
     .top {
       display: flex;
       background-color: #ffe4c4;
@@ -58,19 +74,15 @@ body {
       align-items: center;
       padding: 5px;
     }
-    /* .bottom {
-      background-color: blueviolet;
-      flex: 1;
-      margin: 8px;
-    } */
+
+    /* Down Inside Right */
     .down {
       margin: 5px;
     }
   }
 }
 
-/* Kutty box */
-
+/* Box */
 .box {
   width: 50px;
   height: 50px;
@@ -78,10 +90,11 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* border-radius: 5px; */
   margin: 2px;
+  /* border-radius: 5px; */
 }
 
+/* Top Row Alignment */
 .top_row0 {
   display: flex;
   justify-content: start;
@@ -94,6 +107,8 @@ body {
   display: flex;
   justify-content: end;
 }
+
+/* Middle Row Alignment */
 .mid_row0 {
   display: flex;
   justify-content: space-between;
@@ -107,6 +122,7 @@ body {
   justify-content: space-evenly;
 }
 
+/* Grid for Down Section */
 .down {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
