@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstra Ticket Design</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+      crossorigin="anonymous" />
+  </head>
+  <body class="container">
+    <!-- Tab Content -->
+    <ul class="nav nav-tabs p-3" id="myTab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button
+          class="nav-link active"
+          id="today-tab"
+          data-bs-toggle="tab"
+          data-bs-target="#today-tab-pane"
+          type="button"
+          role="tab"
+          aria-controls="today-tab-pane"
+          aria-selected="true">
+          Today's Event
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button
+          class="nav-link"
+          id="booked-tab"
+          data-bs-toggle="tab"
+          data-bs-target="#booked-tab-pane"
+          type="button"
+          role="tab"
+          aria-controls="booked-tab-pane"
+          aria-selected="false">
+          Booked Events
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button
+          class="nav-link"
+          id="cancelled-tab"
+          data-bs-toggle="tab"
+          data-bs-target="#cancelled-tab-pane"
+          type="button"
+          role="tab"
+          aria-controls="cancelled-tab-pane"
+          aria-selected="false">
+          Cancelled Events
+        </button>
+      </li>
+    </ul>
+    <div class="tab-content" id="myTabContent">
+      <!-- Today Tab -->
+      <div
+        class="tab-pane fade show active"
+        id="today-tab-pane"
+        role="tabpanel"
+        aria-labelledby="today-tab"
+        tabindex="0">
+        <!-- CARD CONTENT -->
+        <div
+          class="mt-3 border-start border-4 border-info p-3 mx-4 shadow-lg bg-body-light rounded">
+          <div class="d-flex justify-content-between">
+            <p>ID: 217</p>
+            <div>
+              <button class="btn btn-outline-info btn-sm text-secondary border-2 fs-6 px-2">
+                Live In Office
+              </button>
+              <button class="btn btn-outline-warning btn-sm text-secondary border-2 fs-6 px-2">
+                Awaiting TLL Approval
+              </button>
+            </div>
+          </div>
+          <p class="mt-2 mb-1">
+            <strong>Unbranded Speaker Presentation <small>+</small>2</strong>
+          </p>
+          <p class="text-secondary">
+            SHIONOGI <span class="text-info-emphasis">></span> Fetroja<sup class="fs-7">®</sup>
+            (cefiderocol)
+            <span><sup class="text-danger fs-7 fw-bold">PI</sup></span>
+          </p>
+          <hr />
+          <!-- Bottom Content -->
+          <div class="d-flex justify-content-between">
+            <div>
+              <p class="m-0"><strong>EO : </strong>Sean Gully</p>
+              <p class="m-0"><strong>Speaker : </strong>Malai Appan, Christopher Cooper</p>
+              <p class="m-0 text-info-emphasis">Attendees Invited : 1</p>
+              <p class="m-0"><strong>Attendees Confirmed : </strong>0</p>
+            </div>
+            <div class="d-flex flex-column">
+              <button class="btn btn-info mr-0 px-3">Time Zone Review</button>
+              <div class="mr-5 text-secondary d-flex flex-column mb-0">
+                <p class="mb-0 ml-0">May 6, 2025</p>
+                <p class="mt-0">6:00 AM ET</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Booked Tab -->
+      <div
+        class="tab-pane fade"
+        id="booked-tab-pane"
+        role="tabpanel"
+        aria-labelledby="booked-tab"
+        tabindex="0">
+        <div class="card mt-3 p-3">
+          <p>Booked Engagement card</p>
+        </div>
+      </div>
+
+      <!-- Cancelled Tab -->
+      <div
+        class="tab-pane fade"
+        id="cancelled-tab-pane"
+        role="tabpanel"
+        aria-labelledby="cancelled-tab"
+        tabindex="0">
+        <div class="card mt-3 p-3">
+          <p>Cancelled Engagement Card</p>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+      crossorigin="anonymous"></script>
+  </body>
+</html>
