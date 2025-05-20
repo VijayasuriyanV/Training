@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+  </head>
+  <body class="min-h-screen flex justify-center items-center">
+    <div class="flex w-full">
+      <!-- Left side image -->
+      <div class="bg-[#edf0f5] w-full min-h-screen flex justify-center">
+        <img
+          src="https://rdmsrevamp.rdcore.net/images/login/login-left-img.svg"
+          class="w-[90%]"
+          alt="myImage" />
+      </div>
+      <!-- Right side -->
+      <div class="w-full flex justify-center items-center">
+        <!-- Email & Password -->
+        <form class="w-full max-w-2xl flex flex-col justify-center gap-4">
+          <img
+            src="https://rdmsrevamp.rdcore.net/images/common/rd-logo.svg"
+            class="object-cover mx-auto" />
+
+          <div class="flex justify-start items-center flex-col gap-4">
+            <!-- Email-->
+            <div class="flex justify-start w-full max-w-sm flex-col gap-3">
+              <label>Email <span class="text-red-400 font-bold text-md pl-2">*</span></label>
+              <div
+                class="w-full max-w-sm border border-gray-300 rounded-md flex items-center px-4 py-2">
+                <!-- envelope icon -->
+                <i class="fa-regular fa-envelope text-lg font-thin text-gray-500"></i>
+                <input
+                  class="w-full border-none text-gray-700 text-md font-medium focus:outline-none px-3"
+                  type="email" />
+              </div>
+            </div>
+            <!-- Password-->
+            <div class="flex justify-start w-full max-w-sm flex-col gap-3">
+              <label>Password <span class="text-red-400 font-bold text-md pl-2">*</span></label>
+              <div class="max-w-sm border border-gray-300 rounded-md flex items-center px-4 py-2">
+                <!-- lock icon -->
+                <i class="fa-solid fa-lock text-lg font-light text-gray-500"></i>
+                <input
+                  class="w-full border-none text-gray-700 text-md font-medium focus:outline-none px-3"
+                  type="password"
+                  autocomplete="new-password"
+                  inputmode="text" />
+                <!-- eye icon -->
+                <i id="togglePassword" class="fa fa-eye-slash cursor-pointer text-gray-500"></i>
+              </div>
+            </div>
+            <button
+              class="bg-blue-600 w-full max-w-sm rounded-md py-3 px-3 text-center text-white text-md font-extrathin mt-4 cursor-pointer hover:bg-blue-800">
+              LOG IN
+              <!-- arrow icon -->
+              <i class="fa-solid fa-arrow-right-long pl-2 text-white font-extrathin text-md"></i>
+            </button>
+
+            <a href="#">Forgot Password?</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
